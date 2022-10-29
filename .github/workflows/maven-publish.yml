@@ -10,5 +10,5 @@ jobs:
     - name: Cloning Code
       uses: actions/checkout@v2
     - name: Building jar file
-      run: mvn spring-boot:run
+      run: nohup mvn spring-boot:run &
       
