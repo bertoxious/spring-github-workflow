@@ -11,7 +11,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Building jar file
       run: mvn clean install
-    - name: Getting inside target folder
-      run: cd target
-    - name: Running jar file
-      run: java -jar *.jar
+    - name: Getting inside target folder and running jar file
+      run: |
+       cd target
+       java -jar *.jar &
+      
