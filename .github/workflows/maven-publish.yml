@@ -13,4 +13,4 @@ jobs:
       run: |
        mvn clean install
        cd target
-       java -jar *.jar 
+       nohup java -jar *.jar  &&
