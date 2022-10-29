@@ -10,9 +10,5 @@ jobs:
     - name: Cloning Code
       uses: actions/checkout@v2
     - name: Building jar file
-      run: mvn clean install
-    - name: Getting inside target folder and running jar file
-      run: |
-       cd target
-       java -jar *.jar &
+      run: mvn spring-boot:run
       
