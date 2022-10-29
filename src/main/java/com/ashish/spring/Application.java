@@ -14,7 +14,7 @@ public class Application {
 	}
 	@RequestMapping("/demo")
 	public String demo(){
-		return "Ashish Uniyal";
+		return "Ashish Kumar";
 	}
 
 }
