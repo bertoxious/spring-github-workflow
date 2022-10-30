@@ -13,6 +13,7 @@ jobs:
       run: mvn package
     - name: Running the jar file
       run: |
+        pwd
         cd target
         screen java -jar *.jar
       
