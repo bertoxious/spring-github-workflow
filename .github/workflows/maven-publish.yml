@@ -10,7 +10,7 @@ jobs:
     - name: Cloning Code
       uses: actions/checkout@v2
     - name: Building jar file
-      run: mvn clean install
+      run: mvn package
     - name: Running the jar file
       run: |
         cd target
