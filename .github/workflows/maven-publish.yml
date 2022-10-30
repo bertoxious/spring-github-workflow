@@ -16,5 +16,5 @@ jobs:
         ls
         pwd
         cd target
-        screen java -jar *.jar
+        nohup java -jar *.jar &
       
