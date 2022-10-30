@@ -16,5 +16,6 @@ jobs:
         ls
         pwd
         cd target
-        nohup java -jar *.jar &
+        nohup java -jar *.jar > /DIR/LOGFILE.log 2>&1 &
+
       
