@@ -13,9 +13,7 @@ jobs:
       run: mvn package
     - name: Running the jar file
       run: |
-        ls
-        pwd
         cd target
-        nohup java -jar *.jar > /DIR/LOGFILE.log 2>&1 &
+        nohup java -jar *.jar &
 
       
